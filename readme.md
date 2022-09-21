@@ -68,6 +68,12 @@ history : 사용했던 명령어 모두 확인 가능
 
 ## 5. 커밋
 ### 커밋의 기본
+
+- 커밋의 정의
+  - The "commit" command is used to save your changes to the local repository.
+  - The git commit command captures a snapshot of the project's currently staged changes.
+    스냅샷과 유사함 
+
 - git의 기본 단위
     - 커밋 하나는 독립적인 버전을 나타냄
     - 커밋마다 설명이 담긴 message가 있음
@@ -97,3 +103,11 @@ history : 사용했던 명령어 모두 확인 가능
     - 개발세계에서의 issue는 해결해야할 task 라는 의미
     - issue 마다 고유한 번호가 붙음
     - git commit → 엔터 → 빈 에디터 혹은 vscode등 설정사항 → 최 상단에 (line1) 커밋 메시지 입력 → **두번째 줄은 반드시 공백으로 남기기 (제목과 본문을 한 줄 띄워 분리하기!)**
+    - 혹은 커밋 메시지 안에 #이슈번호를 기재해야 한다. (깃 프로그램마다 방법 다름)
+
+## 기타
+★ 회사에서는 누구도 main branch에 하지 않는다. 
+
+> Q. git push -u origin main vs git push origin main
+> A. git push -u origin main은 원격저장소와 로컬저장소 연동할 때, 지금 체크아웃하는 모든 커밋을 origin이라는 저장소의 main 브랜치에 저장하겠다.라는 명령어인거고, 그 안에서도 -u는 두 저장소 간의 브랜치끼리도 통신 가능하게 해주는 명령어
+
