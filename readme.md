@@ -77,14 +77,23 @@ history : 사용했던 명령어 모두 확인 가능
     - 회사에서 일할때는 동료들이 커밋한 이력을 보고 어느 정도의 단위로 커밋하는지 확인 해보면 됨.
   
 ### 커밋 만들기
-
-- git commit
-    - `git commit -m “커밋 메시지”`
-    - 커밋 메시지: 해당 커밋에서 어떤 변경이 있었는지를 설명하는 메시지
-        - 좋은 커밋 메시지란?
-        - [https://github.com/javascript-tutorial/ko.javascript.info/pull/460](https://github.com/javascript-tutorial/ko.javascript.info/pull/460)
+    
 - 커밋 만들기
-    - reflections 디렉터리로 이동
-        - git commit -m “reflection2 추가”
-        - git log 입력하여 이력에 커밋 나타나는지 확인하기
-        - git status 입력하여 상태 확인하기
+    - 현재 디렉터리로 이동
+        - `git commit -m “커밋 메시지”`
+        - `git log` 입력하여 이력에 커밋 나타나는지 확인하기
+        - `git status` 입력하여 상태 확인하기
+  
+### 커밋 방법
+- 커밋 메시지: 해당 커밋에서 어떤 변경이 있었는지를 설명하는 메시지
+    - 좋은 커밋 메시지란?
+        - [https://github.com/javascript-tutorial/ko.javascript.info/pull/460](https://github.com/javascript-tutorial/ko.javascript.info/pull/460)
+- 명령창에 `git commit -m “커밋 메시지”`
+- `git commit —message “커밋 메시지”`
+- `이슈트래커` 사용 e.g. Jira, canban note
+    
+    레파지토리에서 issue → new issue → 기재 후 해결 ⇒ **이슈트래커 사용!!**
+    
+    - 개발세계에서의 issue는 해결해야할 task 라는 의미
+    - issue 마다 고유한 번호가 붙음
+    - git commit → 엔터 → 빈 에디터 혹은 vscode등 설정사항 → 최 상단에 (line1) 커밋 메시지 입력 → **두번째 줄은 반드시 공백으로 남기기 (제목과 본문을 한 줄 띄워 분리하기!)**
