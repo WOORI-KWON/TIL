@@ -28,11 +28,11 @@ ls : list
 - ls 뒤에는 -a나 -l 옵션을 붙일 수 있다.
 
 ```
-clear // bash 화면 지우기
+clear : bash 화면 지우기
 ```
 
 ```
-history // 사용했던 명령어 모두 확인 가능
+history : 사용했던 명령어 모두 확인 가능
 ```
 
 ```
